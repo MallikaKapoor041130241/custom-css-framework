@@ -1,0 +1,28 @@
+/* _base.scss */
+@use 'variables' as *;
+
+body {
+  font-family: $font-stack;
+  background: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  font-weight: bold;
+  text-align: center;
+}
+button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: $spacing-unit $spacing-unit * 2;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }

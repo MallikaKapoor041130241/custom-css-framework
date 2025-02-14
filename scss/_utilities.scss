@@ -1,0 +1,27 @@
+/* _utilities.scss */
+@use 'variables' as *;
+
+.text-center {
+  text-align: center;
+}
+
+.margin-small {
+  margin: $spacing-unit;
+}
+
+.padding-small {
+  padding: $spacing-unit;
+}
+
+.text-primary {
+  color: $primary-color;
+} 
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
