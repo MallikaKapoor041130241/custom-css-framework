@@ -1,28 +1,22 @@
-/* _base.scss */
-@use 'variables' as *;
-
-body {
-  font-family: $font-stack;
-  background: $background-color;
-  color: $text-color;
+// Global reset
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $primary-color;
-  font-weight: bold;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  color: #333;
+  line-height: 1.6;
 }
-button {
-    background-color: $primary-color;
-    color: white;
-    border: none;
-    padding: $spacing-unit $spacing-unit * 2;
-    cursor: pointer;
-    text-align: center;
-    &:hover {
-      background-color: $secondary-color;
-    }
+
+
+a {
+  color: red;
+  text-decoration: none;
+  &:hover {
+    color: palevioletred;
   }
+}

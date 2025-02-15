@@ -1,59 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #fff0f3;
-  font-family: "Poppins", sans-serif;
-  color: #ff4d6d;
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-family: "Dancing Script", cursive;
-  color: #ff758f;
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: palevioletred;
 }
 
-.btn {
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-}
-.btn.btn-primary {
-  background-color: #ff4d6d;
+.button {
+  background-color: palevioletred;
   color: white;
-}
-.btn.btn-primary:hover {
-  background-color: #ff758f;
-}
-
-.heart-pulse {
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.text-pink {
-  color: #ff4d6d;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
-.bg-red {
-  background-color: #ff758f;
+.hidden {
+  display: none;
 }
 
-.mt-4 {
-  margin-top: 16px;
+.text-center {
+  text-align: center;
 }
 
-.p-3 {
-  padding: 12px;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-small {
+  margin: 20px;
+}
+
+.padding-small {
+  padding: 20px;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FF69B4; /* Pink color */
+}
+
+button {
+  background-color: #FF69B4; /* Pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Page Layout */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+#page1 div {
+  display: flex;
+  flex-direction: column; /* Stack the heading and button vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures the div takes full width to center the content */
+}
+
+.quiz-container, .answer-container, .image-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Image Layout */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-option {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-option:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Image Layout */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-option {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-option:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FF69B4; /* Pink color */
+}
+
+button {
+  background-color: #FF69B4; /* Pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.image-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-option {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-option:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

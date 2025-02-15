@@ -1,6 +1,165 @@
-/* main.scss */
 @use 'variables';
 @use 'base';
 @use 'buttons';
-@use 'animations';
 @use 'utilities';
+
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FF69B4; /* Pink color */
+}
+
+button {
+  background-color: #FF69B4; /* Pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Page Layout */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+#page1 div {
+  display: flex;
+  flex-direction: column; /* Stack the heading and button vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures the div takes full width to center the content */
+}
+
+
+
+.quiz-container, .answer-container, .image-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Image Layout */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-option {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-option:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Image Layout */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-option {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-option:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FF69B4; /* Pink color */
+}
+
+button {
+  background-color: #FF69B4; /* Pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.image-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-option {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-option:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+

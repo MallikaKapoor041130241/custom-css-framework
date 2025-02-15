@@ -1,15 +1,14 @@
-/* _buttons.scss */
-@use 'variables' as *;
-
-.btn {
-  display: inline-block;
-  padding: $spacing-unit $spacing-unit * 2;
-  border-radius: 4px;
-  text-align: center;
-  text-decoration: none;
-  background: $primary-color;
+// Standard Button
+.button {
+  $padding-medium: 10px; $padding-large: 20px; ;
+  background-color: palevioletred;
   color: white;
-  &:hover {
-    background: $secondary-color;
-  }
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
 }
+

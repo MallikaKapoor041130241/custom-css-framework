@@ -1,7 +1,19 @@
-/* _variables.scss */
-$primary-color: #ff4d6d;
-$secondary-color: #ff758f;
-$text-color: #333;
-$background-color: #fff;
-$font-stack: 'Poppins, sans-serif';
-$spacing-unit: 8px;
+// Color Palette
+$primary-color: #F36F6F; // Red
+$secondary-color: #F3A0A0; // Soft pink
+$accent-color: #FFC1C1; // Light pastel pink
+$button-color: #FF6161; // Button color
+$hover-color: #FF1F1F; // Button hover color
+$background-color: #FFF5F5; // Light background for the body
+
+// Font settings
+$font-primary: 'Poppins', sans-serif;
+$font-calligraphic: 'Dancing Script', cursive;
+
+// Spacing
+$padding-small: 10px;
+$padding-medium: 20px;
+$padding-large: 30px;
+
+// Border Radius
+$border-radius: 15px;

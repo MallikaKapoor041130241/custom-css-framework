@@ -3,23 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom CSS Framework</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>CUSTOM-CSS-FRAMEWORK</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to the external CSS -->
 </head>
 <body>
-    <div class="center-content">
-        <h1>Valentine’s Day</h1>
-        <p>Take a quiz to find the perfect gift for your partner!</p>
-        <button id="quiz-btn" class="btn">Take a Quiz</button>
-        <div class="quiz-choices">
-            <div class="choice">Flowers</div>
-            <div class="choice">Teddy</div>
-            <div class="choice">Savoury</div>
-            <div class="choice">Sweet</div>
-            <div class="choice">Blankets</div>
-            <div class="choice">Candles</div>
+
+    <!-- Page 1: Valentine Day Box -->
+    <div id="page1" class="box">
+        <div> 
+            <h1>✨Happy Valentine's Day!✨</h1>
+            <h2>Choose the Perfect Present for your loved ones!</h2>
+            <button onclick="goToNextPage(1)">Get Started</button>
+            <h1>🎀</h1>
         </div>
     </div>
-    <script src="js/interactive.js"></script>
+
+    <!-- Page 2: Image Selection -->
+    <div id="page2" class="image-selection hidden">
+        <h2>Choose an option for your partner!</h2>
+        <div class="image-container">
+            <img src="C:\Users\HP\Downloads\savory.jpg" alt="Option 1" class="image-option" onclick="chooseImage('Option 1', 2)">
+            <img src="C:\Users\HP\Downloads\sweet.jpg" alt="Option 2" class="image-option" onclick="chooseImage('Option 2', 2)">
+        </div>
+    </div>
+
+    <!-- Page 3: Image Selection -->
+    <div id="page3" class="image-selection hidden">
+        <h2>Choose another option for your partner!</h2>
+        <div class="image-container">
+            <img src="C:\Users\HP\Downloads\letters.jpg" alt="Option 3" class="image-option" onclick="chooseImage('Option 3', 3)">
+            <img src="C:\Users\HP\Downloads\flowers.jpg" alt="Option 4" class="image-option" onclick="chooseImage('Option 4', 3)">
+        </div>
+    </div>
+
+    <!-- Page 4: Image Selection -->
+    <div id="page4" class="image-selection hidden">
+        <h2>Choose another option for your partner!</h2>
+        <div class="image-container">
+            <img src="C:\Users\HP\Downloads\makeup.jpg" alt="Option 5" class="image-option" onclick="chooseImage('Option 5', 4)">
+            <img src="C:\Users\HP\Downloads\ring.jpg" alt="Option 6" class="image-option" onclick="chooseImage('Option 6', 4)">
+        </div>
+    </div>
+
+    <!-- Page 5: Image Selection -->
+    <div id="page5" class="image-selection hidden">
+        <h2>Choose another image for your partner!</h2>
+        <div class="image-container">
+            <img src="C:\Users\HP\Downloads\blanket.jpg" alt="Option 7" class="image-option" onclick="chooseImage('Option 7', 5)">
+            <img src="C:\Users\HP\Downloads\candles.jpg" alt="Option 8" class="image-option" onclick="chooseImage('Option 8', 5)">
+        </div>
+    </div>
+
+    <!-- Page 6: Final Choice -->
+    <div id="page6" class="image-selection hidden">
+        <h2>Choose the final image for your partner!</h2>
+        <div class="image-container">
+            <img src="C:\Users\HP\Downloads\frame.jpg" alt="Option 9" class="image-option" onclick="chooseImage('Option 9', 6)">
+            <img src="C:\Users\HP\Downloads\cups.jpg" alt="Option 10" class="image-option" onclick="chooseImage('Option 10', 6)">
+        </div>
+        
+    </div>
+
+    <script>
+        let selectedChoices = [];
+
+        function goToNextPage(pageNumber) {
+            document.getElementById(`page${pageNumber}`).classList.add('hidden');
+            document.getElementById(`page${pageNumber + 1}`).classList.remove('hidden');
+        }
+
+        function chooseImage(choice, pageNumber) {
+            // Store the choice
+            selectedChoices.push(choice);
+            
+            // Hide the current page
+            document.getElementById(`page${pageNumber}`).classList.add('hidden');
+            
+            // Move to the next page
+            if (pageNumber === 6) {
+                finish();
+            } else {
+                document.getElementById(`page${pageNumber + 1}`).classList.remove('hidden');
+            }
+        }
+
+        function finish() {
+            // Show the perfect gift based on selections
+            let perfectGift = "A Romantic Dinner Date"; // You can customize this logic
+            alert(`Congratulations! Based on your choices, the perfect gift is: ${perfectGift}`);
+        }
+    </script>
+
 </body>
 </html>
