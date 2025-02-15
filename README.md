@@ -44,5 +44,3 @@ git clone <repository-url>
   - Installing Sass.
   - Compiling the Sass into CSS.
   - Linking the compiled CSS in your HTML.
-- **Usage Example**: Basic HTML structure with the custom CSS framework.
-- **Customization**: Clear steps on how to modify colors, fonts, and utility classes.
