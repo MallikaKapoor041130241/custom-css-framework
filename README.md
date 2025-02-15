@@ -38,15 +38,9 @@ Clone the repository to your local machine:
 git clone <repository-url>
 
 
----
-
-### Key Updates:
+#Key Updates:
 - **Installation Steps**:
   - Cloning the repository.
   - Installing Sass.
   - Compiling the Sass into CSS.
   - Linking the compiled CSS in your HTML.
-- **Usage Example**: Basic HTML structure with the custom CSS framework.
-- **Customization**: Clear steps on how to modify colors, fonts, and utility classes.
-
-Feel free to replace `<repository-url>` with your actual repository URL! Let me know if you need anything else.
