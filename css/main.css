@@ -55,7 +55,7 @@ a:hover {
 
 body {
   font-family: Poppins, sans-serif;
-  background-color: #fff;
+  background-color: #ffaaaa;
   color: #333;
   margin: 0;
   padding: 0;
@@ -85,7 +85,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(255, 163, 163);
 }
 
 #page1 div {
@@ -147,7 +147,7 @@ button:hover {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #810b0b;
   color: #333;
   margin: 0;
   padding: 0;
@@ -176,7 +176,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(110, 0, 0);
 }
 
 .image-selection {
