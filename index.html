@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUSTOM-CSS-FRAMEWORK</title>
-    <link rel="stylesheet" href="css/main.css"> <!-- Link to the external CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -47,7 +47,7 @@
 
     <!-- Page 5: Image Selection -->
     <div id="page5" class="image-selection hidden">
-        <h2>Choose another image for your partner!</h2>
+        <h2>Choose another option for your partner!</h2>
         <div class="image-container">
             <img src="C:\Users\HP\Downloads\blanket.jpg" alt="Option 7" class="image-option" onclick="chooseImage('Option 7', 5)">
             <img src="C:\Users\HP\Downloads\candles.jpg" alt="Option 8" class="image-option" onclick="chooseImage('Option 8', 5)">
@@ -56,7 +56,7 @@
 
     <!-- Page 6: Final Choice -->
     <div id="page6" class="image-selection hidden">
-        <h2>Choose the final image for your partner!</h2>
+        <h2>Choose the final option for your partner!</h2>
         <div class="image-container">
             <img src="C:\Users\HP\Downloads\frame.jpg" alt="Option 9" class="image-option" onclick="chooseImage('Option 9', 6)">
             <img src="C:\Users\HP\Downloads\cups.jpg" alt="Option 10" class="image-option" onclick="chooseImage('Option 10', 6)">
@@ -73,13 +73,9 @@
         }
 
         function chooseImage(choice, pageNumber) {
-            // Store the choice
             selectedChoices.push(choice);
-            
-            // Hide the current page
             document.getElementById(`page${pageNumber}`).classList.add('hidden');
-            
-            // Move to the next page
+        
             if (pageNumber === 6) {
                 finish();
             } else {
@@ -88,8 +84,7 @@
         }
 
         function finish() {
-            // Show the perfect gift based on selections
-            let perfectGift = "A Romantic Dinner Date"; // You can customize this logic
+            let perfectGift = "A Romantic Dinner Date";
             alert(`Congratulations! Based on your choices, the perfect gift is: ${perfectGift}`);
         }
     </script>
